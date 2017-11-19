@@ -1,4 +1,6 @@
-# ATXperience
+<Img src="https://github.com/nabiya15/ATXperience/blob/master/assets/images/ATXperience-fade.png" height="75px">
+  
+[Click here to find an event](https://github.com/nabiya15/ATXperience/edit/master/README.md)
 
 ### App built using Zurb Foundation, Eventful API and Zomato API.
 
