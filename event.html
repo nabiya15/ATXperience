@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="page-title">Event Info</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Changa+One|Domine|Amatic+SC|Kavoon|Slabo+27" rel="stylesheet">
+	<link rel="stylesheet" href="foundation/css/foundation.css">
+    <link rel="stylesheet" href="foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="foundation/css/foundation-icons/foundation-icons.css" />
+</head>
+<body>
+
+<div class="wrapper page-background">
+
+	<div class="top-bar navigation">
+		<div class="top-bar-left">
+			<ul class="menu navigation">
+				<li class="menu-text menu"><a href="index.html">ATXperience</a></li>
+			</ul>
+		</div>
+		<div class="top-bar-right" id="navBar">
+			<button class="button" data-open="itineraryModal">Itinerary</button>
+		</div>
+	</div>
+
+	<div class="small reveal page-font itinerary table-scroll" id="itineraryModal" data-reveal>
+		<table class="hover" id="itineraryTable">
+			<thead>
+				<th>To Do</th>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+	<div class="event-page-info">
+		<h1 id="event-title" class="event-info"></h1>
+		<p id="event-date" class="event-info text-center"></p>
+		<div class="grid-x">
+			<div class="small-12 cell">
+				<button class="button fi-plus plus-icon addBtn" id="add-event" data-state="plus">  Itinerary</button>
+				<ul class="list">
+					<li id="event-venue" class="event-info"></li>
+					<li id="event-address" class="event-info"></li>
+					<li id="event-description" class="event-info"></li>
+					<li><a href="#" id="event-URL" target="_blank" class="event-info"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-x recommendations">
+		<div class="cell" id="pre-recs">
+			<div class="callout rec-panel pre-panel">
+				<h2 class="text-center rec-header">PREGAME</h2>
+				<div class="grid-x collapse">
+					<div class="small-0 medium-2 cell"></div>
+					<div class="small-6 medium-4 cell rec-names">
+						<ul class="vertical tabs rec-list page-font" data-active-collapse="true" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><i class="fi-plus plus-icon icon" id="pre-rec-icon0" data-state="plus"></i><a href="#pre-rec-panel0" id="pre-rec-name0" aria-selected="true"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="pre-rec-icon1" data-state="plus"></i><a href="#pre-rec-panel1" id="pre-rec-name1"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="pre-rec-icon2" data-state="plus"></i><a href="#pre-rec-panel2" id="pre-rec-name2"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="pre-rec-icon3" data-state="plus"></i><a href="#pre-rec-panel3" id="pre-rec-name3"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="pre-rec-icon4" data-state="plus"></i><a href="#pre-rec-panel4" id="pre-rec-name4"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="pre-rec-icon5" data-state="plus"></i><a href="#pre-rec-panel5" id="pre-rec-name5"></a></li>
+						</ul>
+					</div>
+					<div class="small-6 medium-4 cell">
+						<div class="tabs-content" data-tabs-content="example-tabs">
+							<div class="tabs-panel is-active page-font" id="pre-rec-panel0">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image0">
+								<div id="pre-rec-rating0"></div>
+								<div id="pre-rec-location0"></div>
+								<div id="pre-rec-category0"></div>
+								<div id="pre-rec-cost0"></div>
+								<a href="#" id="pre-rec-URL0" target="_blank">Event Page</a>
+							</div>
+							<div class="tabs-panel" id="pre-rec-panel1">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image1">
+								<div id="pre-rec-rating1"></div>
+								<div id="pre-rec-location1"></div>
+								<div id="pre-rec-category1"></div>
+								<div id="pre-rec-cost1"></div>
+								<a href="#" id="pre-rec-URL1" target="_blank">Event Page</a>
+							</div>
+							<div class="tabs-panel" id="pre-rec-panel2">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image2">
+								<div id="pre-rec-rating2"></div>
+								<div id="pre-rec-location2"></div>
+								<div id="pre-rec-category2"></div>
+								<div id="pre-rec-cost2"></div>
+								<a href="#" id="pre-rec-URL2" target="_blank">Event Page</a>
+							</div>
+							<div class="tabs-panel" id="pre-rec-panel3">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image3">
+								<div id="pre-rec-rating3"></div>
+								<div id="pre-rec-location3"></div>
+								<div id="pre-rec-category3"></div>
+								<div id="pre-rec-cost3"></div>
+								<a href="#" id="pre-rec-URL3" target="_blank">Event Page</a>
+							</div>
+							<div class="tabs-panel" id="pre-rec-panel4">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image4">
+								<div id="pre-rec-rating4"></div>
+								<div id="pre-rec-location4"></div>
+								<div id="pre-rec-category4"></div>
+								<div id="pre-rec-cost4"></div>
+								<a href="#" id="pre-rec-URL4" target="_blank">Event Page</a>
+							</div>
+							<div class="tabs-panel" id="pre-rec-panel5">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="pre-rec-image5">
+								<div id="pre-rec-rating5"></div>
+								<div id="pre-rec-location5"></div>
+								<div id="pre-rec-category5"></div>
+								<div id="pre-rec-cost5"></div>
+								<a href="#" id="pre-rec-URL5" target="_blank">Event Page</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-0 medium-2 cell"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-x recommendations">
+		<div class="cell" id="food-recs">
+			<div class="callout rec-panel bites-panel">
+				<h2 class="text-center rec-header">BITES</h2>
+				<div class="grid-x collapse">
+					<div class="small-0 medium-2 cell"></div>
+					<div class="small-6 medium-4 cell rec-names">
+						<ul class="vertical tabs rec-list page-font" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><i class="fi-plus plus-icon icon" id="food-rec-icon0" data-state="plus"></i><a href="#food-rec-panel0" id="food-rec-name0" aria-selected="true"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="food-rec-icon1" data-state="plus"></i><a href="#food-rec-panel1" id="food-rec-name1"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="food-rec-icon2" data-state="plus"></i><a href="#food-rec-panel2" id="food-rec-name2"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="food-rec-icon3" data-state="plus"></i><a href="#food-rec-panel3" id="food-rec-name3"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="food-rec-icon4" data-state="plus"></i><a href="#food-rec-panel4" id="food-rec-name4"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="food-rec-icon5" data-state="plus"></i><a href="#food-rec-panel5" id="food-rec-name5"></a></li>
+						</ul>
+					</div>
+					<div class="small-6 medium-4 cell">
+						<div class="tabs-content page-font" data-tabs-content="example-tabs">
+							<div class="tabs-panel is-active" id="food-rec-panel0">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image0">
+								<div id="food-rec-location0"></div>
+								<a href="#" id="food-rec-URL0" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="food-rec-panel1">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image1">
+								<div id="food-rec-location1"></div>
+								<a href="#" id="food-rec-URL1" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="food-rec-panel2">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image2">
+								<div id="food-rec-location2"></div>
+								<a href="#" id="food-rec-URL2" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="food-rec-panel3">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image3">
+								<div id="food-rec-location3"></div>
+								<a href="#" id="food-rec-URL3" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="food-rec-panel4">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image4">
+								<div id="food-rec-location4"></div>
+								<a href="#" id="food-rec-URL4" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="food-rec-panel5">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="food-rec-image5">
+								<div id="food-rec-location5"></div>
+								<a href="#" id="food-rec-URL5" target="_blank">Website</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-0 medium-2 cell"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="grid-x recommendations">
+		<div class="cell" id="post-recs">
+			<div class="callout rec-panel after-panel">
+				<h2 class="text-center rec-header">AFTER PARTY</h2>
+				<div class="grid-x collapse">
+					<div class="small-0 medium-2 cell"></div>
+					<div class="small-6 medium-4 cell rec-names">
+						<ul class="vertical tabs rec-list page-font" data-active-collapse="true" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><i class="fi-plus plus-icon icon" id="post-rec-icon0" data-state="plus"></i><a href="#post-rec-panel0" id="post-rec-name0" aria-selected="true"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="post-rec-icon1" data-state="plus"></i><a href="#post-rec-panel1" id="post-rec-name1"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="post-rec-icon2" data-state="plus"></i><a href="#post-rec-panel2" id="post-rec-name2"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="post-rec-icon3" data-state="plus"></i><a href="#post-rec-panel3" id="post-rec-name3"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="post-rec-icon4" data-state="plus"></i><a href="#post-rec-panel4" id="post-rec-name4"></a></li>
+							<li class="tabs-title"><i class="fi-plus plus-icon icon" id="post-rec-icon5" data-state="plus"></i><a href="#post-rec-panel5" id="post-rec-name5"></a></li>
+						</ul>
+					</div>
+					<div class="small-6 medium-4 cell">
+						<div class="tabs-content page-font" data-tabs-content="example-tabs">
+							<div class="tabs-panel is-active" id="post-rec-panel0">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image0">
+								<div id="post-rec-rating0"></div>
+								<div id="post-rec-location0"></div>
+								<div id="post-rec-category0"></div>
+								<div id="post-rec-cost0"></div>
+								<a href="#" id="post-rec-URL0" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="post-rec-panel1">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image1">
+								<div id="post-rec-rating1"></div>
+								<div id="post-rec-location1"></div>
+								<div id="post-rec-category1">R</div>
+								<div id="post-rec-cost1"></div>
+								<a href="#" id="post-rec-URL1" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="post-rec-panel2">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image2">
+								<div id="post-rec-rating2"></div>
+								<div id="post-rec-location2"></div>
+								<div id="post-rec-category2"></div>
+								<div id="post-rec-cost2"></div>
+								<a href="#" id="post-rec-URL2" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="post-rec-panel3">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image3">
+								<div id="post-rec-rating3"></div>
+								<div id="post-rec-location3"></div>
+								<div id="post-rec-category3"></div>
+								<div id="post-rec-cost3"></div>
+								<a href="#" id="post-rec-URL3" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="post-rec-panel4">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image4">
+								<div id="post-rec-rating4"></div>
+								<div id="post-rec-location4"></div>
+								<div id="post-rec-category4"></div>
+								<div id="post-rec-cost4"></div>
+								<a href="#" id="post-rec-URL4" target="_blank">Website</a>
+							</div>
+							<div class="tabs-panel" id="post-rec-panel5">
+								<img src="assets/images/ATXperience.png" width="200px" height="200px" id="post-rec-image5">
+								<div id="post-rec-rating5"></div>
+								<div id="post-rec-location5"></div>
+								<div id="post-rec-category5"></div>
+								<div id="post-rec-cost5"></div>
+								<a href="#" id="post-rec-URL5" target="_blank">Website</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-0 medium-2 cell"></div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<button onclick="topFunction()" id="goUpBtn" title="Go to top"> Top </button>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("goUpBtn").style.display = "block";
+			} else {
+				document.getElementById("goUpBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<!-- Eventful API -->
+<script type="text/javascript" src="https://api.eventful.com/js/api"></script>
+
+<!-- Event.js -->
+<script src="assets/javascript/event.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Foundation JS -->
+<script src="foundation/js/vendor/what-input.js"></script>
+<script src="foundation/js/vendor/foundation.js"></script>
+<script src="foundation/js/app.js"></script>
+
+</body>
+</html>

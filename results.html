@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATXperience</title>
+
+	<!-- Compressed CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Changa+One|Domine|Amatic+SC|Kavoon|Slabo+27" rel="stylesheet">
+	<link rel="stylesheet" href="foundation/css/foundation.css">
+    <link rel="stylesheet" href="foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="foundation/css/foundation-icons/foundation-icons.css" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="wrapper">
+	<div class="top-bar navigation" id="example-menu">
+		<div class="top-bar-left">
+			<ul class="menu navigation">
+				<li class="menu-text"><a href="index.html">ATXperience</a></li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<button class="button" data-open="itineraryModal">Itinerary</button>
+		</div>
+	</div>
+
+	<div class="small reveal page-font itinerary table-scroll" id="itineraryModal" data-reveal>
+		<table class="hover tablesorter" id="itineraryTable">
+			<thead>
+				<th>To Do</th>
+				<th>Time</th>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+		<!-- Keyword input box -->
+		<form id="search-bar">
+			<div class="row">
+				<div class="small-12 medium-12 columns">
+					<p class="input-header">Search Events</p>
+					<div class="input-group">
+						<input class="input-group-field" type="text" placeholder="Event Name or Keyword" id="searchInput">
+						<div class="input-group-button">
+							<input type="submit" class="button" id="searchBtn">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!-- Event Results Title Box -->
+		<div class="row" style="margin-bottom: 10px">
+			<div class="small-6 medium-12 columns">
+				<div class="title-bar">
+					<div class="title-bar-left">
+						<span class="title-bar-title">Event Results</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Event Results Row -->
+		<div class="row">
+			<div class="small-12 medium-12 columns">
+
+				<div id="googleMap"></div>
+
+			</div> 	<!-- Close Column Class Row -->
+
+			<div class="small-12 medium-12 columns" id='eventList'>
+
+
+			</div> 	<!-- Close Column Class Row -->
+		</div> 	<!-- Close Event Results Row -->
+
+
+	</div>
+	<button onclick="topFunction()" id="goUpBtn" title="Go to top"> Top </button>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("goUpBtn").style.display = "block";
+			} else {
+				document.getElementById("goUpBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+<!-- jQuery-->
+
+<script src= "https://code.jquery.com/jquery.js"></script>
+
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+
+<!-- Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script type="text/javascript" src="https://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+<!-- Eventful API -->
+<script type="text/javascript" src="https://api.eventful.com/js/api"></script>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1tnonxNTk-o1Do7IK06n2-EcTpDt2NQg"></script>
+
+<script src="assets/javascript/results.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+</body>
+</html>
